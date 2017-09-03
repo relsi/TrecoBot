@@ -16,7 +16,15 @@ $(function(){
     });
 
     $("#btn_start").on('click', function(){
-       alert(path); 
+       var directions = path;
+       for (var i = 0; i < directions.length; i++) {
+           var direction = directions[i];
+            $.ajax({
+                method: "GET",
+                url: "http://192.168.1.102/move?dir="+direction
+            });
+           
+       } 
     });
 
 })
