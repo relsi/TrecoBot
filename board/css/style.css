@@ -7,6 +7,11 @@ body {
   margin-top: 35px;
 }
 
+.btn-reset {
+  text-align: center;
+  padding: 10px;
+}
+
 .direction{
   text-align: center;
   padding: 10px;
