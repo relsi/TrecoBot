@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TrecoBot - A fork of the primo.io using ESP8266</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">TrecoBot</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Início</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown">Ajuda</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Como usar</a>
+              <a class="dropdown-item" href="#">Como Montar</a>
+              <a class="dropdown-item" href="#">Sobre o Projeto</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2 directions-bar">
+                <div class="col-md-12 direction">
+                    <img src="images/forward.png" class="img-responsive img-drag" data-direction="1">
+                </div>
+                <div class="col-md-12 direction">
+                    <img src="images/right.png" class="img-responsive img-drag" data-direction="2">
+                </div>
+                <div class="col-md-12 direction">
+                    <img src="images/left.png" class="img-responsive img-drag" data-direction="3">
+                </div>
+                <div class="col-md-12 btn-start">
+                    <button class="btn btn-lg btn-block btn-warning" id="btn_start">Iniciar</button>
+                </div>
+            </div>
+            <div class="col-md-9 board">
+                <div class="col-md-3">
+                    <div class="col-md-12 direction-pad" data-position="3">
+                        4
+                    </div>
+                    <div class="col-md-12 direction-pad" data-position="2">
+                        3
+                    </div>
+                    <div class="col-md-12 direction-pad" data-position="1">
+                        2
+                    </div>
+                    <div class="col-md-12 direction-pad" data-position="0">
+                        1
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-12 direction-pad" data-position="7">
+                        8
+                    </div>
+                    <div class="col-md-12 direction-pad" data-position="6">
+                        7
+                    </div>
+                    <div class="col-md-12 direction-pad" data-position="5">
+                        6
+                    </div>
+                    <div class="col-md-12 direction-pad" data-position="4">
+                        5
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/vendor/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/board.js"></script>
+  </body>
+</html>
